@@ -28,6 +28,7 @@
             #search-placeholder .icon {
                 color: #a8a8a8; /* Light gray color for the icon */
                 margin-right: 10px;
+                padding: 5px;
             }
             #search-placeholder .send-btn {
                 background-color: #a8a8a8; /* White background for the send button */
@@ -38,9 +39,11 @@
                 cursor: pointer;
             }
         #search-placeholder {
+            display: flex;
             position: fixed;
             bottom: 10px;
             left: 50%;
+            
             transform: translateX(-50%);
             background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
             padding: 10px;
@@ -51,11 +54,13 @@
             color: #ffffff;
             border: none;
             width: 350px;
-            padding: 5px;
+            padding: 5px ;
             outline: none;
+            border-radius: 20px;
         }
         #search-placeholder input::placeholder {
             color:  #a8a8a8;
+            margin-left: 10px;
         }
     </style>
 </head>
